@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+:root{
+
+    --bg:white;
+    --board:#ececec;
+    --text:black;
+    --shadow:rgba(0,0,0,.2);
+
+}
+
+.dark{
+
+    --bg:#181818;
+    --board:#4c4c4c;
+    --text:white;
+    --shadow:rgba(255,255,255,.15);
+
+}
+
+body{
+
+    background:var(--bg);
+    color:var(--text);
+    transition:.3s;
+    padding:30px;
+
+}
+
+.topBar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+
+}
+
+#themeBtn{
+
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:20px;
+
+}
+
+.taskForm{
+
+    display:flex;
+    gap:15px;
+    margin-bottom:10px;
+    flex-wrap:wrap;
+
+}
+
+.taskForm input{
+
+    flex:1;
+    padding:18px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+
+}
+
+select{
+    background-color: #ececec;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+
+}
+
+.taskForm button{
+
+    padding:18px 25px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+
+}
+
+.extras{
+
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:25px;
+    font-weight:bold;
+
+}
+
+.main{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    height:70vh;
+
+}
+
+.board{
+
+    background:var(--board);
+    border-radius:20px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+
+}
+
+.heading{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+    font-size:18px;
+
+}
+
+.todoHeading{
+
+    background:#ff8c8c;
+
+}
+
+.progressHeading{
+
+    background:#8fdfff;
+
+}
+
+.doneHeading{
+
+    background:#b8ff85;
+
+}
+
+.taskContainer{
+
+    flex:1;
+    padding:18px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    overflow-y:auto;
+
+}
+
+.task{
+
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 4px 10px var(--shadow);
+    cursor:grab;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.dark .task{
+
+    background:#3a3a3a;
+
+}
+
+.badge{
+
+    color:white;
+    padding:6px 10px;
+    border-radius:15px;
+    font-size:13px;
+    font-weight:bold;
+
+}
+
+.high{
+
+    background:#ff3d3d;
+
+}
+
+.medium{
+
+    background:#f0b400;
+
+}
+
+.low{
+
+    background:#2dbb45;
+
+}
+
+.dragOver{
+
+    outline:3px dashed royalblue;
+
+}
+
+.warning{
+
+    border:4px solid red;
+
+}
+
+@media(max-width:900px){
+
+.main{
+
+grid-template-columns:1fr;
+
+}
+
+}

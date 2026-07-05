@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Task Board</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="topBar">
+        <h1>Kanban Task Board</h1>
+        <button id="themeBtn">🌙</button>
+    </div>
+
+    <div class="taskForm">
+        <input
+            type="text"
+            id="taskInput"
+            maxlength="60"
+            placeholder="Enter Task">
+
+        <select id="priority">
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+
+        <button id="addTask">Add Task</button>
+        <button id="clearAll">Clear All</button>
+    </div>
+
+    <div class="extras">
+        <span id="charCount">0 / 60</span>
+        <span id="priorityPreview">Priority : High</span>
+    </div>
+
+    <div class="main">
+        <div class="board" id="todo">
+            <div class="heading todoHeading">
+                <h2>To Do</h2>
+                <span id="todoCount">0</span>
+            </div>
+            <div id="todoTasks" class="taskContainer"></div>
+        </div>
+
+
+        <div class="board" id="inprog">
+            <div class="heading progressHeading">
+                <h2>In Progress</h2>
+                <span id="progressCount">0</span>
+            </div>
+            <div id="inprogTasks" class="taskContainer"></div>
+        </div>
+
+
+        <div class="board" id="done">
+            <div class="heading doneHeading">
+                <h2>Done</h2>
+                <span id="doneCount">0</span>
+            </div>
+            <div id="doneTasks" class="taskContainer"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

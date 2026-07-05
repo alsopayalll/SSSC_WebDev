@@ -1,0 +1,19 @@
+div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 500px;
+    justify-self: center;
+    align-items: center;
+    margin-top: 25%;
+}
+
+button{
+    width: 150px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+}
+button:hover{
+    background-color: rgb(225, 222, 222);
+}

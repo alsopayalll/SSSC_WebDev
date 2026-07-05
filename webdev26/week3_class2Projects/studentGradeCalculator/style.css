@@ -1,0 +1,30 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    width: 50vw;
+    background-color: rgb(30,58,95);
+    padding: 30px;
+    color: white;
+    align-items: center;
+    gap: 12px;
+    margin-top: 13%;
+    border-radius: 20px;
+
+}
+#marks{
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+}
+button{
+    max-width: 275px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+}
+button:hover{
+    background-color: rgb(212, 211, 211);
+}

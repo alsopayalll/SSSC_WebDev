@@ -1,0 +1,33 @@
+body{
+    background: rgb(249,184,210);
+}
+.main{
+    width: 50vw;
+    max-width: 500px;
+    height: 40vh;
+    background-color: rgb(240,67,140) ;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    justify-self: center;
+    align-self: center;
+    margin-top: 15%;
+}
+button{
+    background-color: rgb(249,184,210);
+    border: dashed 2px rgb(207, 1, 87);
+    border-radius: 12px;
+    padding: 15px;
+}
+.buttons{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+button:hover{
+    background-color: rgb(245, 141, 183);
+    border: none;
+}
